@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar styling */
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Page content margin adjustment */
+.main {
+  padding: 20px;
+}
+
+/* Custom scrollbar for sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+}
+
+/* Card styling */
+.card {
+  height: 100%;
+}
+.chart {
+  display: flex;
+  align-items: flex-end;
+  height: 150px; /* Adjust height as needed */
+}
+
+.bar {
+  width: 20px; /* Adjust width as needed */
+  background-color: #007bff;
+  margin-right: 20px; /* Adjust spacing between bars */
+}
